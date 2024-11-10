@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shareable Resume Builder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="form-container">
+    <h1>Create Your Resume</h1>
+    <form id="resume-form">
+        <div class="form-group">
+            <label for="UserName">UserName</label>
+            <input type="text" name="name" id="UserName" placeholder="enter your UserName"  required>
+        </div>
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" required>
+        </div>
+        <div class="form-group">
+            <label for="age">Age</label>
+            <input type="number" name="age" id="age" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+        <div class="form-group">
+            <label for="education">Education</label>
+            <textarea name="education" id="education" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="skills">Skills</label>
+            <textarea name="skills" id="skills" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="certifications">Certifications</label>
+            <textarea name="certifications" id="certifications" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="languages">Languages</label>
+            <textarea name="languages" id="languages" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="interests">Interests</label>
+            <textarea name="interests" id="interests" required></textarea>
+        </div>
+        <div class="form-group">
+            <label for="profile-pic">Profile Picture</label>
+            <input type="file" name="profile-pic" id="profile-pic" accept="image/*">
+        </div>
+        <button type="submit" class="btn">Generate Resume</button>
+    </form>
+</div>
+
+<div class="resume-container" style="display: none;">
+    <div class="resume-header">
+        <img id="resume-profile-pic" alt="Profile Picture" class="profile-pic">
+        <h1 id="resume-name">Your Name</h1>
+    </div>
+    <div class="resume-section">
+        <h2>Personal Information</h2>
+        <p id="resume-age">Age: </p>
+        <p id="resume-email">Email: </p>
+    </div>
+    <div class="resume-section">
+        <h2>Education</h2>
+        <p id="resume-education">Education: </p>
+    </div>
+    <div class="resume-section">
+        <h2>Skills</h2>
+        <p id="resume-skills">Skills: </p>
+    </div>
+    <div class="resume-section">
+        <h2>Certifications</h2>
+        <p id="resume-certifications">Certifications: </p>
+    </div>
+    <div class="resume-section">
+        <h2>Languages</h2>
+        <p id="resume-languages">Languages: </p>
+    </div>
+    <div class="resume-section">
+        <h2>Interests</h2>
+        <p id="resume-interests">Interests: </p>
+    </div>
+    <div id="shareable-link-container" style="display:none" class="resume-section">
+        <h2>shareable link</h2>
+        <p>from here you can access your resume link</p>
+        <a href="#" id="shareable-link" target="_blank"></a>
+        
+    </div>
+
+    <button id="edit-resume" class="btn">Edit Resume</button>
+    <button id="reset-form" class="btn">Reset</button>
+    <button id="download-resume" class="btn">Download as pdf</button>
+    
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
+
+
+
+
+
